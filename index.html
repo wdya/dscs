@@ -34,6 +34,7 @@
           <li><a href="#tabChecklists" data-toggle="tab" data-target="#tabChecklists,#btnHideCompleted">Checklists</a></li>
           <li><a href="#tabInformation" data-toggle="tab">Information</a></li>
           <li><a href="#tabHelp" data-toggle="tab">Help</a></li>
+          <li><a href="#tabOptions" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
           <!--
           <li class="active"><a href="#tabPlaythrough" data-toggle="tab" data-target="#tabPlaythrough,#btnHideCompleted">Playthrough</a></li>
           <li><a href="#tabChecklists" data-toggle="tab" data-target="#tabChecklists,#btnHideCompleted">Achievements</a></li>
@@ -41,7 +42,7 @@
           <li><a href="#tabArmors" data-toggle="tab" data-target="#tabArmors,#btnHideCompleted">Armor</a></li>
           <li><a href="#tabMisc" data-toggle="tab" data-target="#tabMisc,#btnHideCompleted">Misc</a></li>
           <li><a href="#tabFAQ" data-toggle="tab"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
-          <li><a href="#tabOptions" data-toggle="tab"><span class="glyphicon glyphicon-cog"></span> Options</a></li>
+          
           -->
         </ul>
         <!-- /.nav.navbar-nav -->
@@ -54,26 +55,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1>Dark&nbsp;Souls&nbsp;Remastered Cheat&nbsp;Sheet</h1>
+          <h1>Dark&nbsp;Souls&nbsp;Remastered&nbsp;Cheat&nbsp;Sheet</h1>
         </div>
       </div>
-
-        <div class="navbar">
-            <div class="navbar-inner">
-                <h1>Dark Souls Cheat Sheet</h1>
-                  <div class="profile form-inline" style="float: right;">
-                    <div class="input-group" style="display: flex; flex-direction: row;">
-                        <select class="form-control" style="width: auto;" id="themes"><!-- Gets filled by jQuery. --></select>
-                        <select class="form-control" style="width: auto;" id="profiles"></select>
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button" id="profileAdd">Add</button>
-                            <button class="btn btn-default" type="button" id="profileEdit">Edit</button>
-                            <button class="btn btn-default" type="button" id="profileNG+">NG+</button>
-                        </span>
-                   </div>
-                </div>
-            </div>
-        </div>
 
         <div class="tab-content">
 
@@ -1401,6 +1385,32 @@
                 </p>
 
             </div>
+  
+            
+            <div class="tab-pane" id="tabOptions">
+              <h2>Options</h2>
+
+              <!-- Theme Selection -->
+              <div class="row">
+                <div class="col col-xs-12 col-sm-4 col-md-6"><h4>Theme selection:</h4></div>
+                <div class="col col-xs-12 col-sm-8 col-md-6"><select class="form-control" id="themes"><!-- Gets filled by jQuery. --></select></div>
+              </div>
+              <!-- Profile Selection -->
+              <div class="row">
+                <div class="col col-xs-12 col-sm-4 col-md-6"><h4>Profile management:</h4></div>
+                <div class="col col-xs-12 col-sm-8 col-md-6">
+                  <form class="form-inline input-group pull-right">
+                    <select class="form-control" id="profiles"></select>
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button" id="profileAdd">Add</button>
+                      <button class="btn btn-default" type="button" id="profileEdit">Edit</button>
+                      <button class="btn btn-default" type="button" id="profileNG+">NG+</button>
+                    </span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          
 
         </div>
 
